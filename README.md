@@ -8,6 +8,8 @@ Parts of this documentation describe the architecture of the Hwaf tool, and a se
 
 This documentation reflects in particular the conventions, usage adopted in the Atlas project, although most of the rules and recipes should be applied in other projects.
 
+In addition there are in every section, some bits of comparisons with former recipes using the CMT tool. 
+
 # Using hwaf as a software user
 
 You want to use a piece of software that has been configured, produced and developped using Hwaf.
@@ -23,23 +25,32 @@ You want to contribute to a software base which is configured using Hwaf.
 
 ## Setting up Hwaf
 ## Configuring the software base
+### Selecting a work model
 ## Creating a project
 ## Creating a package
+### A new package
+### Get a package from existing sources
 ## Structure of a package
+### Conventions for Atlas
 ## Constituents of a package
 ## Parameters of a package
+### Defining a configuration parameter
+### Variants & tags
 ## Declaring the dependencies
 ## Using the standard festures
 ## Adding new features
 ## Queries onto the software base
+## Connecting to already installed (external) sofware
 
 # Using hwaf as a Librarian
 
 You want to manage a sofware base around the Hwaf concepts & tool.
 
+## Installing Hwaf itself
 ## Setting up Hwaf
 ## Configuring the software base
-## How to distribute software
+### Defining a work model
+## How to distribute your software
 ## Connection to the DCVS
 ## Import/export software
 ## Connecting to already installed sofware
@@ -52,6 +63,9 @@ You want to manage a sofware base around the Hwaf concepts & tool.
 ### Build
 ### Install
 ### Run
+## The specification languages
+### Yaml
+### Waf scripts
 
 # Technical documentation
 
