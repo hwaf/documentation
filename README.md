@@ -15,9 +15,21 @@ In addition there are in every section, some bits of comparisons with former rec
 You want to use a piece of software that has been configured, produced and developped using Hwaf.
 
 ## Setting up Hwaf
+
+to be completed
+
 ## Where is your software 
+
+to be completed
+
 ## How to setup for running
+
+to be completed
+
 ## Queries onto the software base
+
+to be completed
+
 
 # Using hwaf as a software developper
 
@@ -25,12 +37,14 @@ You want to contribute to a software base which is configured using Hwaf.
 
 ## Setting up Hwaf
 
+to be completed
+
 ## Configuring the software base
 ### Selecting a work model
 
-``hwaf`` supports multi-projects builds, where each project holds a number of interrelated packages. Projects have their own life, (with build and installation area).
+``hwaf`` supports multi-projects builds, where each project holds a number of interrelated packages. Projects have their own life (with specific build and installation areas).
 
-Then the central tool in ``hwaf`` is the concept of the workarea, where locally checked out packages will live. The workarea represents the current project.
+Then the central tool in ``hwaf`` is the concept of the workarea where the current project resides. Locally checked out packages of this project will live.
 
 To create such a workarea:
 
@@ -106,44 +120,137 @@ Although one may customize this script, generally speaking, only configuration s
 Creating a package consists in adding a subdirectory inside the workarea.
 
 ### A new package
+
+to be completed
+
 ### Get a package from existing sources
+
+to be completed
+
 ## Structure of a package
+
+to be completed
+
 ### Conventions for Atlas
+
+to be completed
+
 ## Constituents of a package
+
+to be completed
+
 ## Parameters of a package
+
+to be completed
+
 ### Defining a configuration parameter
+
+to be completed
+
 ### Variants & tags
+
+to be completed
+
 ## Declaring the dependencies
+
+to be completed
+
 ## Using the standard festures
+
+to be completed
+
 ## Adding new features
+
+to be completed
+
 ## Queries onto the software base
+
+to be completed
+
 ## Connecting to already installed (external) sofware
+
+to be completed
+
 
 # Using hwaf as a Librarian
 
 You want to manage a sofware base around the Hwaf concepts & tool.
 
 ## Installing Hwaf itself
+
+to be completed
+
 ## Setting up Hwaf
+
+to be completed
+
 ## Configuring the software base
+
+to be completed
+
 ### Defining a work model
+
+to be completed
+
 ## How to distribute your software
+
+to be completed
+
 ## Connection to the DCVS
+
+to be completed
+
 ## Import/export software
+
+to be completed
+
 ## Connecting to already installed sofware
+
+to be completed
+
 
 # Hwaf architecture
 
 ## Management concepts
+
+to be completed
+
 ## The hwaf workflows
+
+to be completed
+
 ### Configure
+
+to be completed
+
 ### Build
+
+to be completed
+
 ### Install
+
+to be completed
+
 ### Run
+
+to be completed
+
 ## The specification languages
+
+to be completed
+
 ### Yaml
+
+to be completed
+
 ### Waf scripts
 
+to be completed
+
+
 # Technical documentation
+
+
+to be completed
 
 
