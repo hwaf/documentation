@@ -28,7 +28,33 @@ to be completed
 
 ## Queries onto the software base
 
-to be completed
+At the moment, a few queries have been implemented:
+
+```sh
+# list the parent project of the current project
+$ hwaf show projects
+project dependency list for [work] (#projs=0)
+work
+'show-projects' finished successfully (0.015s)
+
+# list the dependencies of a given package
+$ hwaf show pkg-uses mytools/mypkg
+package dependency list for [mytools/mypkg] (#pkgs=0)
+mytools/mypkg
+'show-pkg-uses' finished successfully (0.015s)
+
+# print the value of some flags: C++ compilation, link, shared-lib
+$ hwaf show flags CXXFLAGS LINKFLAGS
+CXXFLAGS=['-O2', '-m64']
+LINKFLAGS=[]
+
+# print the constituents of a project
+$ hwaf show constituents
+cxx-hello-world 
+py-hello 
+```
+
+(to be continued)
 
 
 # Using hwaf as a software developper
