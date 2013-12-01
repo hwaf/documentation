@@ -1,4 +1,3 @@
-
 Documentation for hwaf
 
 # Introduction
@@ -61,7 +60,7 @@ py-hello
 
 You want to contribute to a software base which is configured using Hwaf. 
 
-## Setting up Hwaf
+## Setting up hwaf
 
 to be completed
 
@@ -147,7 +146,43 @@ Creating a package consists in adding a subdirectory inside the workarea.
 
 ### A new package
 
-to be completed
+``hwaf`` has a subcommad to create a default package:
+
+```sh
+$ hwaf pkg help create
+Usage: hwaf pkg create [options] <pkg-full-path>
+
+create creates a new package in the current workarea.
+
+ex:
+ $ hwaf pkg create MyPath/MyPackage
+ $ hwaf pkg create -script=yml MyPath/MyPackage
+ $ hwaf pkg create -script=py  MyPath/MyPackage
+
+options:
+  -authors="": comma-separated list of authors for the new package
+  -script="yml": type of the hwaf script to use (yml|py)
+  -v=false: enable verbose output
+
+$ hwaf pkg create MyDir/MyPackage
+
+$ tree .
+.
+|-- local.conf
+|-- src
+|   `-- MyDir
+|       `-- MyPackage
+|           |-- MyPackage
+|           |-- hscript.yml
+|           `-- src
+`-- wscript
+
+5 directories, 3 files
+```
+
+This will create a package with name ``MyPackage`` under the directory ``MyDir``.
+Notice this will create a package with a ``hscript.yml`` file.
+One can also create a package with a ``hscript.py`` file by passing the ``-script=py`` option.
 
 ### Get a package from existing sources
 
