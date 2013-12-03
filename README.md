@@ -13,9 +13,46 @@ In addition there are in every section, some bits of comparisons with former rec
 
 You want to use a piece of software that has been configured, produced and developped using Hwaf.
 
-## Setting up Hwaf
+## Setting up `hwaf`
 
-to be completed
+### Installing `hwaf` from sources
+``hwaf`` is a ``Go`` binary produced by the [Go toolchain](http://golang.org).
+So, if you have already the ``Go`` toolchain installed (see
+[here](http://golang.org/doc/install.html) for instructions) you just have to
+do:
+
+```sh
+$ go get github.com/hwaf/hwaf
+```
+
+to get the latest ``hwaf`` tool (and its ``git`` goodies) installed
+and ready.
+
+
+### Installing pre-packaged `hwaf` binaries
+
+Packaged up binaries for ``hwaf`` are also available [here](http://cern.ch/hwaf/downloads/tar).
+Untar under some directory like so (for linux 64b):
+
+```sh
+$ mkdir local
+$ cd local
+$ curl -L \
+  http://cern.ch/hwaf/downloads/tar/hwaf-SOMEVERSION-linux-amd64.tar.gz \
+  | tar zxf -
+$ export HWAF_ROOT=`pwd`
+$ export PATH=$HWAF_ROOT/bin:$PATH
+```
+
+### Using `hwaf` from `CERN-AFS`
+
+Pre-packaged binaries of ``hwaf`` are also available on ``CERN-AFS``:
+
+```sh
+$ . /afs/cern.ch/atlas/project/hwaf/sw/install/latest/linux-amd64/setup-hwaf.sh
+$ which hwaf
+/afs/cern.ch/atlas/project/hwaf/sw/install/hwaf-20131202/linux-amd64/bin/hwaf
+```
 
 ## Where is your software 
 
